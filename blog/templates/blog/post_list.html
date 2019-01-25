@@ -8,7 +8,8 @@
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
-            <img scr="{{MEDIA_URL}}{{post.image}}" class="img-fluid">
+            <img src="{{MEDIA_URL}}{{post.image}}">
+
         </div>
     {% endfor %}
 {% endblock %}
